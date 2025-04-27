@@ -440,26 +440,26 @@ export const FormContactAddress = () => {
               className="flex-1"
               options={address.postalCode}
             />
-            {/* RT */}
+            
             <InputField
               label="RT"
               placeholder="e.g. 001"
               name="RT"
               type="number"
               value={contactForm.RT}
-              onChange={(e) => handleFormChange(e)}
+              onChange={(e) => handleFormChange(e,  (value) => value))}
               className="flex-1"
               maxLength={3}
               errorMessage="At least 3 characters."
             />
-            {/* RT */}
+            
             <InputField
               label="RW"
               placeholder="e.g. 001"
               name="RW"
               type="number"
               value={contactForm.RW}
-              onChange={(e) => handleFormChange(e)}
+              onChange={(e) => handleFormChange(e, (value) => value)}
               className="flex-1"
               maxLength={3}
               errorMessage="At least 3 characters."
