@@ -54,11 +54,11 @@ const DataFormPublisherProvider = ({ children }) => {
     const contactFilled =
       contactForm.contactName &&
       contactForm.email &&
-      contactForm.phoneNumbers.every((phone) => phone !== "");
-    contactForm.province;
-    contactForm.city;
-    contactForm.district;
-    contactForm.subDistrict;
+      contactForm.phoneNumbers.every((phone) => phone !== "") &&
+    contactForm.province &&
+    contactForm.city &&
+    contactForm.district &&
+    contactForm.subDistrict &&
     contactForm.postalCode;
 
     return formFilled && contactFilled;
